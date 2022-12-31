@@ -1,0 +1,147 @@
+body {
+  font-family: monospace;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 30px;
+}
+
+.form {
+  margin-top: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.form label {
+  font-size: 20px;
+}
+
+.form input {
+  padding: 8px 10px;
+  margin: 0 15px;
+  font-size: 18px;
+}
+
+.btnPrimary {
+  border: none;
+  cursor: pointer;
+  padding: 10px 20px;
+  background: rgba(52, 52, 151, 0.816);
+  color: white;
+  border-radius: 10px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.btnPrimary:hover {
+  background: rgba(79, 79, 209, 0.816);
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  text-align: center;
+  background: rgba(215, 215, 215, 0.383);
+  max-width: 800px;
+  margin: 60px auto 0 auto;
+  padding: 30px;
+}
+
+.notCompleted {
+  border-right: 2px solid #e1dbdb;
+}
+
+.notCompleted h1 {
+  color: red;
+}
+
+.completed h1 {
+  color: green;
+}
+
+.todoItems {
+  padding: 0 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.btnRestore, .btnRed, .btnGreen {
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.btnGreen {
+  background: green;
+  color: white;
+}
+
+.btnGreen:hover {
+  background: rgba(0, 128, 0, 0.782);
+}
+
+.btnRed {
+  background: red;
+  color: white;
+}
+
+.btnRed:hover {
+  background: rgba(255, 0, 0, 0.762);
+}
+
+.btnRestore {
+  background: white;
+  color: black;
+}
+
+.btnRestore:hover {
+  background: rgba(255, 255, 255, 0.609);
+}
+
+@media only screen and (max-width: 992px) {
+  .grid {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .notCompleted {
+    border: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  h1 {
+    font-size: 22px;
+  }
+  h2 {
+    font-size: 18px !important;
+  }
+  input {
+    padding: 0 !important;
+    font-size: 16px !important;
+  }
+  label {
+    font-size: 17px !important;
+  }
+  button {
+    padding: 8px !important;
+  }
+}
+/*# sourceMappingURL=todos.module.css.map */

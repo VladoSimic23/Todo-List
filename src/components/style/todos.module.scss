@@ -1,0 +1,123 @@
+$blue : rgba(52, 52, 151, 0.816);
+$lightBlue: rgba(79, 79, 209, 0.816);
+
+body {
+    font-family: monospace;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 30px;
+}
+.form {
+    margin-top: 60px;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    label {
+        font-size: 20px;
+    }
+    input {
+        padding: 8px 10px;
+        margin: 0 15px;
+        font-size: 18px;
+    }
+}
+.btnPrimary {
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    background: $blue;
+    color: white;
+    border-radius: 10px;
+    transition: all 0.3s;
+    &:hover {
+        background: $lightBlue;
+    }
+}
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    background: rgba(215, 215, 215, 0.383);
+    max-width: 800px;
+    margin: 60px auto 0 auto;
+    padding: 30px;
+}
+
+.notCompleted {
+    border-right: 2px solid rgb(225, 219, 219);
+    h1 {
+        color: red
+    }
+   
+}
+.completed {
+   h1 {
+    color: green;
+   }
+}
+.todoItems {
+    padding: 0 30px;
+    display: flex;
+   justify-content: space-between;
+   align-items: baseline;
+}
+
+.btnRestore, .btnRed, .btnGreen {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+.btnGreen {
+    background: green;
+    color: white;
+    &:hover {
+        background: rgba(0, 128, 0, 0.782);
+    }
+}
+.btnRed {
+    background: red;
+    color: white;
+    &:hover {
+        background: rgba(255, 0, 0, 0.762);
+    }
+}
+.btnRestore {
+    background: white;
+    color: black;
+    &:hover {
+        background: rgba(255, 255, 255, 0.609);
+    }
+}
+
+
+@media only screen and (max-width: 992px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+    .notCompleted {
+        border: none;
+    }
+    
+}
+
+@media only screen and (max-width: 768px) {
+    h1 {
+        font-size: 22px;
+    }
+    h2 {
+        font-size: 18px !important;
+    }
+    input {
+        padding: 0 !important;
+        font-size: 16px !important;
+    }
+    label {
+        font-size: 17px !important;
+    }
+    button {
+        padding: 8px !important;
+    }
+}

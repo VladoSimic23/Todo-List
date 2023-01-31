@@ -152,5 +152,11 @@ body {
   .form input {
         margin: 10px 0;
     }
+      .todoItems {
+        flex-direction: column;
+        align-items: center;
+        border-bottom: 1px solid #d7d7d7;
+        padding-bottom: 15px;
+    }
   }
 /*# sourceMappingURL=todos.module.css.map */

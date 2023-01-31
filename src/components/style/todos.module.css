@@ -148,9 +148,9 @@ body {
     .form {
       flex-direction: column;
       align-items: center;
-      input {
+    }
+  .form input {
         margin: 10px 0;
-      }
     }
   }
 /*# sourceMappingURL=todos.module.css.map */
